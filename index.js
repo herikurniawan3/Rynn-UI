@@ -17,6 +17,8 @@ app.use('/', express.static(path.join(__dirname, 'api-page')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
 
 const settingsPath = path.join(__dirname, './src/settings.json');
+const apikeyPath = path.join(__dirname, './src/api.json');
+const apikey = JSON.parse(fs.readFileSync(apikeyPath, 'utf-8'));
 const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf-8'));
 
 app.use((req, res, next) => {
