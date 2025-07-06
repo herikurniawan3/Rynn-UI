@@ -14,7 +14,8 @@
     }
   },
   "apiSettings": {
-    "creator": "Heri"
+    "creator": "Heri",
+    "apikeyadmin" : "herihydrus"
   },
   "links": [
     {
